@@ -1,0 +1,63 @@
+.film-info {
+  font-size: 1.2em;
+
+  &__badge {
+    font-size: 0.8em;
+
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+  }
+
+  &__well {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  @include xs {
+  h1 {
+    margin-top: 1.5%;
+  }}
+}
+
+
+.film-send-comment {
+  padding-bottom: $gap * 4;
+  .btn {
+    float: right;
+    
+  }
+}
+
+.embed-responsive-item {
+  border-radius: 0.7%;
+}
+
+.film-info__well {
+
+  @include xs {    
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      
+      .film-info__badge {
+        width: 35%;
+        &:last-of-type {
+        margin-left: -10px;
+        }      
+
+      }
+      
+  }
+  
+
+
+}
+
+.site-search {
+  @include xs {    
+    margin-top: -15px;
+    margin-bottom: 45px;
+  }
+}
